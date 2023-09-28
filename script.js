@@ -1,4 +1,4 @@
-async function output(data) {
+/*async function output(data) {
     const $ = document.querySelector.bind(document)
     let output = '<nav><ul>'
     for (const key in data) {
@@ -19,4 +19,16 @@ async function doSocial() {
     await output(social)
 }
 
-doSocial();
+doSocial();*/
+const $=document.querySelector.bind(document);
+
+
+function add(a, b){
+    const c=a+b;
+    return c;
+}
+
+const output = add(2,4)
+
+$('#output').innerHTML=output;
+console.log(output);
