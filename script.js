@@ -1,13 +1,8 @@
 
-const $=document.querySelector.bind(document);
-
-
-function add(a, b){
+(function add(a, b){
+    const $=document.querySelector.bind(document);
     const c=a+b;
-    return c;
-}
+    $('#output').innerHTML=c;
+    console.log(output);
+})(2,4);
 
-const output = add(2,4)
-
-$('#output').innerHTML=output;
-console.log(output);
